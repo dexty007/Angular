@@ -38,6 +38,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { DishService } from './services/dish.service';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,7 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
     MatSortModule,
 MatPaginatorModule
   ],
-  providers: [],
+  providers: [DishService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
