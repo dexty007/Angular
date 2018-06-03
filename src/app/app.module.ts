@@ -41,6 +41,10 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { DishService } from './services/dish.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -48,7 +52,10 @@ import { FooterComponent } from './footer/footer.component';
     MenuComponent,
     DishdetailComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -56,6 +63,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     HttpModule,
     FormsModule,
+    AppRoutingModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
